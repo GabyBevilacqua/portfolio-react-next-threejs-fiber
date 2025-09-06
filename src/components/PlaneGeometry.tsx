@@ -7,7 +7,11 @@ import * as THREE from "three"
 import { ThreeEvent, useFrame, useThree } from "@react-three/fiber"
 import gsap from "gsap"
 
-export default function PlaneGeometry() {
+type PlaneGeometryProps = {
+  rotation?: [number, number, number]
+}
+
+export default function PlaneGeometry({ rotation }: PlaneGeometryProps) {
   const meshRef = useRef<THREE.Mesh>(null)
   const { camera } = useThree()
   const raycaster = useMemo(() => new THREE.Raycaster(), [])
@@ -18,8 +22,8 @@ export default function PlaneGeometry() {
   const { width, height, widthSegments, heightSegments } = useControls("Plane", {
     width: { value: 43, min: 1, max: 50, step: 1 },
     height: { value: 32, min: 1, max: 50, step: 1 },
-    widthSegments: { value: 26, min: 1, max: 50, step: 1 },
-    heightSegments: { value: 25, min: 1, max: 50, step: 1 },
+    widthSegments: { value: 31, min: 1, max: 50, step: 1 },
+    heightSegments: { value: 22, min: 1, max: 50, step: 1 },
   })
 
   // ✅ Generar geometría con colores y datos originales
@@ -136,6 +140,7 @@ export default function PlaneGeometry() {
       ref={meshRef}
       geometry={geometry}
       onPointerMove={handlePointerMove}
+      rotation={rotation}
       //rotation-x={-Math.PI / 2} // para que esté horizontal (como suelo)
       // para que esté frontal (como pared) se quita la rotación
     >

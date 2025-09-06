@@ -1,9 +1,12 @@
 // poner todos mis proyectos
 
+import ProyScene from '@/components/ProyScene'
 import React from 'react'
 
 export default function ProjectsPage() {
   return (
-    <div>Projects</div>
+    <main className="h-screen w-screen">
+      <ProyScene />
+    </main>
   )
 }
