@@ -9,33 +9,22 @@ import { useRef, useEffect } from "react"
 import * as THREE from "three"
 
 export default function Scene() {
-    const lightRef = useRef<THREE.DirectionalLight>(null)
 
-    useEffect(() => {
-        if (lightRef.current) {
-            const helper = new THREE.DirectionalLightHelper(lightRef.current, 2, "red")
-            lightRef.current.parent?.add(helper)
-            return () => {
-                if (lightRef.current && lightRef.current.parent) {
-                    lightRef.current.parent.remove(helper)
-                }
-                helper.dispose()
-            }
-        }
-    }, [])
 
     return (
         //canvas por defecto trae PerspectiveCamera [0, 0, 5] fov: 75
         <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
             <directionalLight
-                ref={lightRef}
-                color="white" intensity={1}
-                position={[0, 0, 1]}
+                color="white"
+                intensity={2}
+                position={[20, 40, 40]}
+                castShadow
             />
+            {/* Luz secundaria suave desde abajo a la izquierda */}
             <directionalLight
-                ref={lightRef}
-                color="white" intensity={1}
-                position={[0, 0, -1]}
+                color="white"
+                intensity={0.5}
+                position={[-20, -40, -40]}
             />
             {/* <ambientLight />
       <pointLight position={[10, 10, 10]} /> */}
