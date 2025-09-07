@@ -20,10 +20,10 @@ export default function PlaneGeometry({ rotation }: PlaneGeometryProps) {
 
   // ✅ Controles Leva
   const { width, height, widthSegments, heightSegments } = useControls("Plane", {
-    width: { value: 43, min: 1, max: 50, step: 1 },
-    height: { value: 32, min: 1, max: 50, step: 1 },
-    widthSegments: { value: 31, min: 1, max: 50, step: 1 },
-    heightSegments: { value: 22, min: 1, max: 50, step: 1 },
+    width: { value: 62, min: 1, max: 100, step: 1 },
+    height: { value: 50, min: 1, max: 100, step: 1 },
+    widthSegments: { value: 40, min: 1, max: 100, step: 1 },
+    heightSegments: { value: 33, min: 1, max: 100, step: 1 },
   })
 
   // ✅ Generar geometría con colores y datos originales
@@ -72,7 +72,7 @@ export default function PlaneGeometry({ rotation }: PlaneGeometryProps) {
         i,
         originalPosition[offset],
         originalPosition[offset + 1],
-        originalPosition[offset + 2] + Math.sin(time + randomValues[i]) * 0.1
+        originalPosition[offset + 2] + Math.sin(time + randomValues[i]) * 0.5 // Amplitud de la onda (ajustado a 0.1
       )
     }
     posAttr.needsUpdate = true

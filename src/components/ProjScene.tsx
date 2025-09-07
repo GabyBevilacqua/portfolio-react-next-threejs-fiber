@@ -8,7 +8,7 @@ import { Perf } from 'r3f-perf'
 import { useRef, useEffect } from "react"
 import * as THREE from "three"
 
-export default function ProyScene() {
+export default function ProjScene() {
 
 
     return (
