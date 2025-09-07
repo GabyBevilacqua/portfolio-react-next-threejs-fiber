@@ -88,6 +88,7 @@
 }
 
 .exploreButton {
+    text-decoration: none;
     cursor: pointer;
     color: white;
     margin: 0 2rem;

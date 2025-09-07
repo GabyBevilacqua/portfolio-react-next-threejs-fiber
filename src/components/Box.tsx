@@ -3,7 +3,7 @@ import { Edges } from "@react-three/drei";
 export default function Box() {
     return (
         <mesh>
-            <boxGeometry args={[1, 1, 1]} />
+            <boxGeometry args={[5, 5, 5]} />
             <meshBasicMaterial color="orange" />
             <Edges
                 scale={1.1} // Opcional: para que las líneas estén un poco fuera del cubo

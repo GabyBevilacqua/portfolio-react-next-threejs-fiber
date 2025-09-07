@@ -13,7 +13,7 @@ export default function ProjScene() {
 
     return (
         //canvas por defecto trae PerspectiveCamera [0, 0, 5] fov: 75
-        <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
+        <Canvas camera={{ position: [0, 2, 10], fov: 75 }}>
             <directionalLight
                 color="white"
                 intensity={2}
@@ -31,7 +31,7 @@ export default function ProjScene() {
             <Box />
             <PlaneGeometry  rotation={[-Math.PI / 2, 0, 0]}/>
             <Perf position="top-left" />
-            <OrbitControls />
+            {/* <OrbitControls /> */}
         </Canvas>
     )
 }

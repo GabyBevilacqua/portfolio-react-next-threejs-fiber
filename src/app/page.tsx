@@ -15,20 +15,20 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.buttonContainer}>
-          <Link href="/biografi">
-            <button className={styles.exploreButton}>Biografía</button>
+          <Link href="/biography" className={styles.exploreButton}>
+            Biografía
           </Link>
-          <Link href="/projects">
-            <button className={styles.exploreButton}>Proyectos</button>
+          <Link href="/projects" className={styles.exploreButton}>
+            Proyectos
           </Link>
-          <Link href="/studies">
-            <button className={styles.exploreButton}>Estudios</button>
+          <Link href="/studies" className={styles.exploreButton}>
+            Estudios
           </Link>
-          <Link href="/experience">
-            <button className={styles.exploreButton}>Experiencia</button>
+          <Link href="/experience" className={styles.exploreButton}>
+            Experiencia
           </Link>
-          <Link href="/contact">
-            <button className={styles.exploreButton}>Contacto</button>
+          <Link href="/contact" className={styles.exploreButton}>
+            Contacto
           </Link>
         </div>
       </div>
