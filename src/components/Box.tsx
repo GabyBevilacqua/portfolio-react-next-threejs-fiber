@@ -1,8 +1,8 @@
 import { Edges } from "@react-three/drei";
 
-export default function Box() {
+export default function Box({ position }: { position: [number, number, number] }) {
     return (
-        <mesh>
+        <mesh position={position}>
             <boxGeometry args={[5, 5, 5]} />
             <meshBasicMaterial color="orange" />
             <Edges
