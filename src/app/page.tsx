@@ -21,13 +21,13 @@ export default function Home() {
           <Link href="/projects" className={styles.exploreButton}>
             Proyectos
           </Link>
-          <Link href="/studies" className={styles.exploreButton}>
+          <Link href="/" className={styles.exploreButton}>
             Estudios
           </Link>
-          <Link href="/experience" className={styles.exploreButton}>
+          <Link href="/" className={styles.exploreButton}>
             Experiencia
           </Link>
-          <Link href="/contact" className={styles.exploreButton}>
+          <Link href="/" className={styles.exploreButton}>
             Contacto
           </Link>
         </div>
