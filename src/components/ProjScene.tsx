@@ -1,12 +1,12 @@
 "use client"
 
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls } from "@react-three/drei"
+//import { OrbitControls } from "@react-three/drei"
 import Box from "./Box"
 import PlaneGeometry from "./PlaneGeometry"
 import { Perf } from 'r3f-perf'
-import { useRef, useEffect, useState } from "react"
-import * as THREE from "three"
+import { useEffect, useState } from "react"
+//import * as THREE from "three"
 
 export default function ProjScene() {
     const [isMobile, setIsMobile] = useState(false)

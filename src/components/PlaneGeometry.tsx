@@ -1,6 +1,6 @@
 "use client"
 
-import { Edges } from "@react-three/drei"
+//import { Edges } from "@react-three/drei"
 import { useEffect, useMemo, useRef } from "react"
 import { useControls } from 'leva'
 import * as THREE from "three"

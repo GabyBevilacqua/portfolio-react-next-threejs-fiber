@@ -2,11 +2,11 @@
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
-import Box from "./Box"
+//import Box from "./Box"
 import PlaneGeometry from "./PlaneGeometry"
 import { Perf } from 'r3f-perf'
-import { useRef, useEffect } from "react"
-import * as THREE from "three"
+//import { useRef, useEffect } from "react"
+//import * as THREE from "three"
 
 function CameraLogger() {
     const { camera } = useThree()
