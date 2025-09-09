@@ -5,16 +5,9 @@ import { OrbitControls } from "@react-three/drei"
 //import Box from "./Box"
 import PlaneGeometry from "./PlaneGeometry"
 import { Perf } from 'r3f-perf'
+import StarGeometry from "./StarGeometry"
 //import { useRef, useEffect } from "react"
 //import * as THREE from "three"
-
-function CameraLogger() {
-    const { camera } = useThree()
-    useFrame(() => {
-        console.log("Camera position:", camera.position)
-    })
-    return null
-}
 
 export default function Scene() {
 
@@ -41,7 +34,7 @@ export default function Scene() {
             <PlaneGeometry />
             <Perf position="top-left" />
             <OrbitControls />
-          {/* <CameraLogger /> */}
+            <StarGeometry />
         </Canvas>
     )
 }

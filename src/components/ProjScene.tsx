@@ -6,12 +6,13 @@ import Box from "./Box"
 import PlaneGeometry from "./PlaneGeometry"
 import { Perf } from 'r3f-perf'
 import { useEffect, useState } from "react"
+import StarGeometry from "./StarGeometry"
 //import * as THREE from "three"
 
 export default function ProjScene() {
     const [isMobile, setIsMobile] = useState(false)
 
-        useEffect(() => {
+    useEffect(() => {
         const handleResize = () => setIsMobile(window.innerWidth <= 900)
         handleResize()
         window.addEventListener("resize", handleResize)
@@ -36,10 +37,11 @@ export default function ProjScene() {
             />
             {/* <ambientLight />
       <pointLight position={[10, 10, 10]} /> */}
-            <Box position={[0, 0, isMobile ? -8 : 0]}  />
-            <PlaneGeometry  rotation={[-Math.PI / 2, 0, 0]}/>
+            <Box position={[0, 0, isMobile ? -8 : 0]} />
+            <PlaneGeometry rotation={[-Math.PI / 2, 0, 0]} />
             <Perf position="top-left" />
             {/* <OrbitControls /> */}
+            <StarGeometry />
         </Canvas>
     )
 }

@@ -5,6 +5,7 @@ import { OrbitControls } from "@react-three/drei"
 import Box from "./Box"
 import PlaneGeometry from "./PlaneGeometry"
 import { Perf } from 'r3f-perf'
+import StarGeometry from "./StarGeometry"
 //import { useRef, useEffect } from "react"
 //import * as THREE from "three"
 
@@ -31,6 +32,7 @@ export default function BioScene() {
             <PlaneGeometry rotation={[-Math.PI / 2, 0, 0]} />
             <Perf position="top-left" />
             <OrbitControls />
+            <StarGeometry />
         </Canvas>
     )
 }
