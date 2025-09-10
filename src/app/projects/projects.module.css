@@ -32,6 +32,18 @@
   width: 99vw;
 }
 
+.cardsSection {
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.0) 30%),
+    url('/fondoboat.jpg') center/cover no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 300;
+}
+
  .cardsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,11 +60,51 @@
 }
 
 .card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.603);
   border-radius: 1rem;
   padding: 2rem;
   color: white;
   box-shadow: 0 4px 32px 0 rgba(0,0,0,0.2);
-  min-height: 200px;
-  /* Otros estilos que desees */
+  min-height: 250px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  z-index: 1000;
+
+  @media (width <=900px) {
+    padding: 1rem;
+  }
+}
+  
+.card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  scale: 1.05;
 }
