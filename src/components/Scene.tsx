@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"

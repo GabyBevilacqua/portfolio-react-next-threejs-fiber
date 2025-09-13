@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './experience.module.css'
+import ExperienceScene from '@/components/ExperienceScene'
 
 export default function ExperiencePage() {
   return (
@@ -12,7 +13,7 @@ export default function ExperiencePage() {
           Ir a home
         </Link>
       </div>
-      
+      <ExperienceScene />
     </main>
   )
 }

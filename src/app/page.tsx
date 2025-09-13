@@ -1,7 +1,7 @@
 import Scene from "@/components/Scene"
 import styles from "./home.module.css"
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,19 +19,19 @@ export default function Home() {
               <Link href="https://github.com/GabyBevilacqua" className={styles.githubLink}>
                 <span className={styles.iconWrapper}>
                   <span className={styles.github1}>
-                    <img
+                    <Image
                       src="/github1.svg"
                       alt="GitHub"
-                      width={40}
-                      height={40}
+                      fill
+                      sizes="32px"
                     />
                   </span>
                   <span className={styles.github2}>
-                    <img
+                    <Image
                       src="/github2.svg"
                       alt="GitHub"
-                      width={40}
-                      height={40}
+                      fill
+                      sizes="32px"
                     />
                   </span>
                 </span>
@@ -40,23 +40,24 @@ export default function Home() {
               <Link href="https://www.linkedin.com/in/gabriellabevilacqua/" className={styles.githubLink}>
                 <span className={styles.iconWrapper}>
                   <span className={styles.github1}>
-                    <img
+                    <Image
                       src="/linkedin1.svg"
                       alt="LinkedIn"
-                      width={40}
-                      height={40}
+                      fill
+                      sizes="32px"
                     />
                   </span>
                   <span className={styles.github2}>
-                    <img
+                    <Image
                       src="/linkedin2.svg"
                       alt="LinkedIn"
-                      width={40}
-                      height={40}
+                      fill
+                      sizes="32px"
                     />
                   </span>
                 </span>
               </Link>
+              
             </div>
           </div>
         </div>

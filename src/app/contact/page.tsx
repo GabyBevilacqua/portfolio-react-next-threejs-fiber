@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './contact.module.css'
+import ContactScene from '@/components/ContactScene'
 
 export default function ContactPage() {
   return (
@@ -12,7 +13,7 @@ export default function ContactPage() {
           Ir a home
         </Link>
       </div>
-      
+      <ContactScene />
     </main>
   )
 }
