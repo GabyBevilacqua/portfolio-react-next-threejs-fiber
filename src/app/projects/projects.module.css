@@ -1,56 +1,53 @@
 .backButton {
-    text-decoration: none;
-    position: absolute;
-    top: 10rem;
-    left: 2rem;
-    padding: 1rem;
-    font-size: 1rem;
-    color: white;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    z-index: 1000; /* Asegura que esté por encima del canvas */
+  text-decoration: none;
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1000;
+  /* Asegura que esté por encima del canvas */
 
-    &:hover {
-        background: rgba(41, 41, 41, 0.671);
-        scale: 1.2;
-    }
+  &:hover {
+    background: rgba(41, 41, 41, 0.671);
+    scale: 1.2;
+  }
 
-    @media (width <=900px) {
-        margin: 1rem;
-        padding: 0.8rem;
+  @media (width <=900px) {
+    margin: 1rem;
+    padding: 0.8rem;
 
-    }
- }
+  }
+}
 
- .main {
+.main {
   min-height: 100vh;
   width: 99vw;
 }
 
 .cardsSection {
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.0) 30%),
-    url('/fondoboat.jpg') center/cover no-repeat;
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  z-index: 300;
+
+  width: auto;
+  min-height: auto;
+  z-index: 2;
+  padding-top: 2rem;
 }
 
- .cardsContainer {
+.cardsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   width: 90vw;
-  margin: 15rem auto;
-  padding-bottom: 8rem;
+  margin: 4rem auto 1rem auto;
+  padding-bottom: 1rem;
 
   @media (width <=900px) {
     grid-template-columns: 1fr;
@@ -75,7 +72,7 @@
     padding: 1rem;
   }
 }
-  
+
 .card h3 {
   margin-bottom: 1rem;
   font-size: 1.3rem;

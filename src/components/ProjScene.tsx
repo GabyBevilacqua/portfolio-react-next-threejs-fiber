@@ -22,7 +22,7 @@ export default function ProjScene() {
 
     return (
         //canvas por defecto trae PerspectiveCamera [0, 0, 5] fov: 75
-        <Canvas camera={{ position: [0, 2, 10], fov: 75 }}>
+        <Canvas camera={{ position: [0, 5, 20], fov: 75 }}>
             <directionalLight
                 color="white"
                 intensity={2}

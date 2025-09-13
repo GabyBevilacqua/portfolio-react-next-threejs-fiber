@@ -1,4 +1,3 @@
-// poner todos mis proyectos
 'use client'
 
 import ProjScene from '@/components/ProjScene'
@@ -6,18 +5,20 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './projects.module.css'
 
+
 export default function ProjectsPage() {
+
+
   return (
     <main className={styles.main}>
+      
       <div>
         <Link href="/" className={styles.backButton}>
           Ir a home
         </Link>
       </div>
-      <ProjScene />
       <section className={styles.cardsSection}>
         <div className={styles.cardsContainer}>
-          {/* Ejemplo de 6 cards */}
           <div className={styles.card}>
             <h3>Portfolio para el escultor Carloleonardo Aponte</h3>
             <p>Diseñé y desarrollé el sitio web oficial de un escultor contemporáneo, combinando diseño, desarrollo y fotografía para crear una experiencia digital inmersiva..</p>
@@ -60,6 +61,9 @@ export default function ProjectsPage() {
           <div className={styles.card}>Proyecto 6</div>
         </div>
       </section>
+            
+        <ProjScene />
+      
     </main>
   )
 }
