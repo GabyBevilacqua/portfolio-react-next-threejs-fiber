@@ -10,10 +10,10 @@ export default function Home() {
         <div className={styles.homecontainer}>
           <h1 className={styles.title}>Gabriella Bevilacqua</h1>
           <p className={styles.description}>Full Stack Developer</p>
-          <p className={styles.description2}>"Navego mares de código y diseño,
+          <p className={styles.description2}>Navego mares de código y diseño,
             tejiendo universos digitales donde cada línea es una ola
             y cada interfaz, una historia por descubrir. Te invito a navegar
-            mi portfolio y descubrir ésta historia e interactuar con los elementos"</p>
+            mi portfolio y descubrir ésta historia e interactuar con los elementos</p>
           <div>
             <div className={styles.links}>
               <Link href="https://github.com/GabyBevilacqua" className={styles.githubLink}>
@@ -57,7 +57,7 @@ export default function Home() {
                   </span>
                 </span>
               </Link>
-              
+
             </div>
           </div>
         </div>
