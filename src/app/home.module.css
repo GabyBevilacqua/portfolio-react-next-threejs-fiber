@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: auto;
     z-index: 500;
 }
 
@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: auto;
     width: 50vw;
     z-index: 500;
     background: rgba(255, 255, 255, 0.185);
@@ -55,7 +55,7 @@
 
 .description {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     color: white;
 
     @media (width <=900px) {
@@ -63,14 +63,69 @@
     }
 }
 
-.links {
-    font-size: 1.5rem;
-    margin: 0.5rem 1rem;
+.description2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
     color: white;
+    padding: 0 13rem;
+    text-align: justify;
 
     @media (width <=900px) {
         font-size: 0.8rem;
+        padding: 0 1rem;
     }
+}
+
+.links {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+/* <a href="https://iconscout.com/icons/github" class="text-underline font-size-sm" target="_blank">github</a> by <a href="https://iconscout.com/es/contributors/manoj10101996/:assets" class="text-underline font-size-sm" target="_blank">Manojkumar Muthukumar</a>*/
+/* <a href="https://iconscout.com/icons/github" class="text-underline font-size-sm" target="_blank">github</a> by <a href="https://iconscout.com/es/contributors/manoj10101996/:assets" class="text-underline font-size-sm">Manojkumar Muthukumar</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> */
+.githubLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s;
+    pointer-events: auto;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.iconWrapper {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.github1,
+.github2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.2s;
+}
+
+.github2 {
+    opacity: 0;
+}
+
+.githubLink:hover .github1 {
+    opacity: 0;
+}
+
+.githubLink:hover .github2 {
+    opacity: 1;
+}
+
+.githubLink:hover {
+    transform: scale(1.5);
 }
 
 .buttonContainer {

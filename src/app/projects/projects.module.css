@@ -60,15 +60,15 @@
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.603);
+  background: rgba(21, 9, 44, 0.603);
   border-radius: 1rem;
   padding: 2rem;
   color: white;
-  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 32px 0 rgba(136, 112, 197, 0.281);
   min-height: 250px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.322);
+  border: 2px solid rgba(197, 172, 255, 0.541);
   z-index: 1000;
 
   @media (width <=900px) {

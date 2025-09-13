@@ -1,6 +1,7 @@
 import Scene from "@/components/Scene"
 import styles from "./home.module.css"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -9,9 +10,54 @@ export default function Home() {
         <div className={styles.homecontainer}>
           <h1 className={styles.title}>Gabriella Bevilacqua</h1>
           <p className={styles.description}>Full Stack Developer</p>
+          <p className={styles.description2}>"Navego mares de código y diseño,
+            tejiendo universos digitales donde cada línea es una ola
+            y cada interfaz, una historia por descubrir. Te invito a navegar
+            mi portfolio y descubrir ésta historia e interactuar con los elementos"</p>
           <div>
-            <Link href="#" className={styles.links}>GitHub</Link>
-            <Link href="#" className={styles.links}>LinkedIn</Link>
+            <div className={styles.links}>
+              <Link href="https://github.com/GabyBevilacqua" className={styles.githubLink}>
+                <span className={styles.iconWrapper}>
+                  <span className={styles.github1}>
+                    <img
+                      src="/github1.svg"
+                      alt="GitHub"
+                      width={40}
+                      height={40}
+                    />
+                  </span>
+                  <span className={styles.github2}>
+                    <img
+                      src="/github2.svg"
+                      alt="GitHub"
+                      width={40}
+                      height={40}
+                    />
+                  </span>
+                </span>
+              </Link>
+
+              <Link href="https://www.linkedin.com/in/gabriellabevilacqua/" className={styles.githubLink}>
+                <span className={styles.iconWrapper}>
+                  <span className={styles.github1}>
+                    <img
+                      src="/linkedin1.svg"
+                      alt="LinkedIn"
+                      width={40}
+                      height={40}
+                    />
+                  </span>
+                  <span className={styles.github2}>
+                    <img
+                      src="/linkedin2.svg"
+                      alt="LinkedIn"
+                      width={40}
+                      height={40}
+                    />
+                  </span>
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
         <div className={styles.buttonContainer}>

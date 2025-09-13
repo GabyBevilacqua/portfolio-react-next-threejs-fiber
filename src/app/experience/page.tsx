@@ -16,3 +16,23 @@ export default function ExperiencePage() {
     </main>
   )
 }
+
+/* 
+
+"El océano es mi lienzo y la programación, mi brújula.
+Cada proyecto es un viaje donde el diseño y el código se encuentran,
+dando vida a mundos digitales que cuentan historias."
+
+⚡ Profesional
+
+"Soy una full stack developer apasionada por transformar ideas
+en experiencias digitales únicas, donde el diseño y la programación
+se unen para crear proyectos que inspiran y conectan."
+
+🌱 Minimalista
+
+"Diseño y desarrollo webs que son viajes:
+un mundo de creatividad donde el código se convierte en océano
+y las ideas llegan a puerto."
+
+*/

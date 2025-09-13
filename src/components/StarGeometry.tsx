@@ -1,10 +1,12 @@
 'use client'
 
-import { useMemo } from "react"
+import { useMemo, useRef } from "react"
 import * as THREE from "three"
 import { PointMaterial } from "@react-three/drei"
+import { useFrame } from "@react-three/fiber"
 
 export default function StarGeometry() {
+    const groupRef = useRef<THREE.Group>(null)
     const geometry = useMemo(() => {
         const geo = new THREE.BufferGeometry()
         const starVertices = []
@@ -27,14 +29,22 @@ export default function StarGeometry() {
         return geo
     }, [])
 
+    useFrame((_, delta) => {
+        if (groupRef.current) {
+            groupRef.current.rotation.x += 0.02 * delta // velocidad ajustable
+        }
+    })
+
     return (
-        <points geometry={geometry}>
-            <PointMaterial
-                color="white"
-                size={1}
-                sizeAttenuation
-                vertexColors={false}
-            />
-        </points>
+        <group ref={groupRef}>
+            <points geometry={geometry}>
+                <PointMaterial
+                    color="white"
+                    size={1}
+                    sizeAttenuation
+                    vertexColors={false}
+                />
+            </points>
+        </group>
     )
 }
