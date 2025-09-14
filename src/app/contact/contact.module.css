@@ -14,9 +14,11 @@
     border-radius: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 1000; /* Asegura que esté por encima del canvas */
+    transition: all 0.3s ease;
 
     &:hover {
-        background: rgba(41, 41, 41, 0.671);
+        background: rgba(69, 54, 122, 0.603);
+        border: 1px solid rgb(227, 157, 255);
         scale: 1.2;
     }
 

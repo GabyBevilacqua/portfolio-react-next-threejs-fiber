@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './studies.module.css'
-import StudiesScene from '@/components/StudiesScene'
+import StudiesScene from '@/components/scenes/StudiesScene'
+
 
 export default function StudiesPage() {
   return (

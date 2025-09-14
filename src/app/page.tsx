@@ -1,11 +1,12 @@
 "use client";
 
-import Scene from "@/components/Scene"
+import Scene from "@/components/scenes/Scene"
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./home.module.css";
+import { Leva } from "leva";
 
 
 export default function Home() {
@@ -73,6 +74,7 @@ export default function Home() {
         </div>
       </div>
       <Scene />
+      <Leva collapsed /> {/* Leva para useControls, no hace falta poner Leva a no se que queramos esconder los controles o que no esten desplegados, en este caso se puso para esconderlo */}
     </main>
   );
 }

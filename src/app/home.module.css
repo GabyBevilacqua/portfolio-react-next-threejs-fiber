@@ -28,7 +28,7 @@
     height: auto;
     width: 50vw;
     z-index: 500;
-    background: rgba(255, 255, 255, 0.185);
+    background: rgba(0, 0, 0, 0.541);
     /* Fondo blanco translúcido */
     box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(10px);
@@ -165,16 +165,17 @@
     margin: 0 2rem;
     padding: 1rem;
     z-index: 500;
-    background: rgba(255, 255, 255, 0.1);
-    /* Fondo blanco translúcido */
+    background:  rgba(0, 0, 0, 0.541);
     box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
 
     &:hover {
-        background: rgba(41, 41, 41, 0.671);
+        background: rgba(69, 54, 122, 0.603);
+        border: 1px solid rgb(227, 157, 255);
         scale: 1.2;
     }
 

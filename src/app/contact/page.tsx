@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './contact.module.css'
-import ContactScene from '@/components/ContactScene'
+import ContactScene from '@/components/scenes/ContactScene'
+
 
 export default function ContactPage() {
   return (

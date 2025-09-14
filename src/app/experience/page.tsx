@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './experience.module.css'
-import ExperienceScene from '@/components/ExperienceScene'
+import ExperienceScene from '@/components/scenes/ExperienceScene'
+
 
 export default function ExperiencePage() {
   return (

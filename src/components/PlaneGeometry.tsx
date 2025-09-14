@@ -44,7 +44,7 @@ export default function PlaneGeometry({ rotation }: PlaneGeometryProps) {
       randomValues.push(Math.random() * Math.PI * 2)
 
       // Color inicial (azul oscuro)
-      colors.push(0, 0.06, 0.09)
+      colors.push(0.10, 0.08, 0.25)
     }
 
     geo.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3))
@@ -85,8 +85,9 @@ export default function PlaneGeometry({ rotation }: PlaneGeometryProps) {
       const face = intersects[0].face!
       const indices = [face.a, face.b, face.c]
 
-      // Hover color
-      const hoverColor = [0.03, 0.3, 0.5] // azul claro
+  // Hover color
+  const hoverColor = [0.45, 0.5, 1.0] // violeta azulado más claro
+      // const hoverColor = [0.03, 0.3, 0.5] // azul claro
 
       indices.forEach(idx => {
         // Limpiar tween anterior si existe
@@ -149,6 +150,7 @@ export default function PlaneGeometry({ rotation }: PlaneGeometryProps) {
         side={THREE.DoubleSide}
         flatShading={true}
       />
+      
       {/* <Edges scale={1.01} color="white" threshold={15} /> */}
     </mesh>
   )

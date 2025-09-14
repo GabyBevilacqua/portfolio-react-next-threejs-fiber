@@ -14,10 +14,12 @@
   border-radius: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 1000;
+  transition: all 0.3s ease;
   /* Asegura que esté por encima del canvas */
 
   &:hover {
-    background: rgba(41, 41, 41, 0.671);
+    background: rgba(69, 54, 122, 0.603);
+    border: 1px solid rgb(227, 157, 255);
     scale: 1.2;
   }
 
@@ -34,7 +36,7 @@
 }
 
 .cardsSection {
-
+  background-image: url('/fonfoStars2.webp');
   width: auto;
   min-height: auto;
   z-index: 2;
@@ -43,9 +45,9 @@
 
 .cardsContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  width: 90vw;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 70vw;
   margin: 4rem auto 1rem auto;
   padding-bottom: 1rem;
 
@@ -61,11 +63,11 @@
   border-radius: 1rem;
   padding: 2rem;
   color: white;
-  box-shadow: 0 4px 32px 0 rgba(136, 112, 197, 0.281);
+  box-shadow: 0 4px 25px 0 rgb(136, 112, 197);
   min-height: 250px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 2px solid rgba(197, 172, 255, 0.541);
+  border: 2px solid rgb(197, 172, 255);
   z-index: 1000;
 
   @media (width <=900px) {
@@ -92,16 +94,29 @@
 
 .card a {
   display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 0.5rem;
   text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
   color: white;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1000;
   transition: all 0.3s ease;
-}
 
-.card a:hover {
-  background: rgba(255, 255, 255, 0.4);
-  scale: 1.05;
+  &:hover {
+    background: rgba(69, 54, 122, 0.603);
+    border: 1px solid rgb(227, 157, 255);
+    scale: 1.2;
+  }
+
+  @media (width <=900px) {
+    margin: 1rem;
+    padding: 0.8rem;
+
+  }
 }

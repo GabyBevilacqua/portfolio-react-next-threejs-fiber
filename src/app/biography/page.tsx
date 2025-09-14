@@ -1,10 +1,11 @@
 // redactar la biografia
 'use client'
 
-import BioScene from '@/components/BioScene'
+import BioScene from '@/components/scenes/BioScene'
 import Link from 'next/link'
 import React from 'react'
 import styles from './biography.module.css'
+import { Leva } from 'leva'
 
 export default function BiographyPage() {
   return (
@@ -15,6 +16,7 @@ export default function BiographyPage() {
         </Link>
       </div>
       <BioScene/>
+      <Leva collapsed />
     </main>
   )
 }
