@@ -13,7 +13,8 @@
     -webkit-backdrop-filter: blur(10px);
     border-radius: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    z-index: 1000; /* Asegura que esté por encima del canvas */
+    z-index: 1000;
+    /* Asegura que esté por encima del canvas */
     transition: all 0.3s ease;
 
     &:hover {
@@ -23,8 +24,42 @@
     }
 
     @media (width <=900px) {
-        margin: 1rem;
-        padding: 0.8rem;
+    top: 1rem;
+    left: 1rem;
+    margin: 1rem;
+    padding: 0.8rem;
 
     }
- }
+}
+.sceneBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cardsSection {
+    position: relative;
+    width: auto;
+    min-height: auto;
+    z-index: 2;
+    padding-top: 2rem;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 70vw;
+    margin: 4rem auto 1rem auto;
+    padding-bottom: 1rem;
+
+    @media (width <=900px) {
+        grid-template-columns: 1fr;
+        width: 95vw;
+        margin: 10rem auto;
+    }
+}

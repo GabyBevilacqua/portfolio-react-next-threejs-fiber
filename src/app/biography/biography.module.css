@@ -23,6 +23,8 @@
   }
 
   @media (width <=900px) {
+    top: 1rem;
+    left: 1rem;
     margin: 1rem;
     padding: 0.8rem;
 
